@@ -1,0 +1,51 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button class="navbar-toggle" data-target="#top-menu" data-toggle="collapse" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="index.html">
+                <img class="logo" src="/assets/img/logo.png" />
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="top-menu">
+            <ul class="nav navbar-nav navbar-right">
+                {{#each _base.menu}}
+                    {{#if submenu}}
+                        <li class="dropdown {{class}}">
+                            <a href class="dropdown-toggle" data-toggle="dropdown">
+                                <span>{{title}}</span>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                {{#each submenu}}
+                                    <li class="{{class}} {{equal @key @root._page 'active'}}">
+                                        <a href="/{{@root._base.language.code}}/{{url}}">{{title}}</a>
+                                    </li>
+                                {{/each}}
+                            </ul>
+                        </li>
+                    {{else}}
+                        <li class="{{class}} {{equal @key @root._page 'active'}}">
+                            <a href="/{{@root._base.language.code}}/{{url}}">{{title}}</a>
+                        </li>
+                    {{/if}}
+                {{/each}}
+                <li class="visible-xs dropdown">
+                    <a href="javascript;" class="language-toggle dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <span>{{_base.language.title}}</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="language-menu dropdown-menu">
+                        {{#each _base.languages}}
+                            <li><a href="{{_base.url}}/{{@key}}/{{@root._page}}.html">{{this}}</a></li>
+                        {{/each}}
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

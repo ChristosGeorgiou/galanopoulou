@@ -1,0 +1,95 @@
+{
+    "language": {
+        "code": "en",
+        "title": "English"
+    },
+    "languages": {
+        "el": "Greek",
+        "en": "Εnglish"
+    },
+    "menu": {
+        "index": {
+            "title": "ΗΟΜΕ"
+        },
+        "company": {
+            "title": "ABOUT US"
+        },
+        "personal": {
+            "title": "PERSONAL",
+            "submenu": {
+                "automoto": {
+                    "title": "MOTOR"
+                },
+                "life": {
+                    "title": "LIFE & HEALTH"
+                },
+                "property": {
+                    "title": "PROPERTY"
+                },
+                "boat": {
+                    "title": "BOAT"
+                },
+                "photovoltaic": {
+                    "title": "PHOTOVOLTAIC"
+                },
+                "liability": {
+                    "title": "LIABILITY"
+                },
+                "travel": {
+                    "title": "TRAVEL"
+                },
+                "accident": {
+                    "title": "PERSONAL ACCIDENT"
+                }
+            }
+        },
+        "business": {
+            "title": "BUSINESS",
+            "submenu": {
+                "grouppolicies": {
+                    "title": "GROUP POLICIES"
+                },
+                "businessliability": {
+                    "title": "LIABILITY PROTECTION"
+                },
+                "cargo": {
+                    "title": "CARGO INSURANCE"
+                },
+                "allrisk": {
+                    "title": "AGAINST ALL RISK"
+                }
+            }
+        },
+        "contact": {
+            "title": "CONTACT"
+        }
+    },
+    "footer": {
+        "short": "<h4>IN A FEW WORDS</h4> <p>Το γραφείο μας δραστηριοποιείται σε όλους τους σύγχρονους κλάδους ασφάλισης, παρέχοντας ολοκληρωμένη ασφαλιστική κάλυψη σε ιδιώτες και σε επιχειρήσεις. Συνεργαζόμαστε με το σύνολο των ασφαλιστικών εταιρειών στον Ελλαδικό χώρο, αλλά και με εταιρείες στην Ευρώπη, γεγονός που μας επιτρέπει να αναπτύξουμε εξατομικευμένα προγράμματα προκειμένου να καλύψουμε τις ανάγκες των πελατών μας.</p>",
+        "newsletter": {
+            "title": "NEWSLETTER",
+            "descrption": "Sign up for our Newsletter to receive information and offers",
+            "name": "NAME",
+            "email": "EMAIL",
+            "button": "REGISTRATION"
+        },
+        "terms": "Terms of Use"
+    },
+    "contact": {
+        "title": "CONTACT FORM",
+        "descrption": "Contact us so we can plan a custom package according to your needs.",
+        "name": "NAME",
+        "email": "EMAIL [*]",
+        "phone": "PHONE NUMBER",
+        "message": "MESSAGE",
+        "action": "SEND",
+        "error": {
+            "message": "Send error!",
+            "details": "Contact us at 2130267712 <br/>or at email contact@softloop.gr"
+        },
+        "success": {
+            "message": "Thank you!",
+            "details": "We will contact you soon."
+        }
+    }
+}

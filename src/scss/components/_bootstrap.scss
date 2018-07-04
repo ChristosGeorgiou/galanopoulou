@@ -1,0 +1,72 @@
+body {
+  overflow-x: hidden;
+  @include body-font;
+}
+a {
+  color: $primary;
+  a:hover,
+  a:focus,
+  a:active,
+  a.active {
+    color: darken($primary, 10%);
+    outline: none;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font;
+  font-weight: 700;
+}
+p {
+  font-size: 14px;
+  line-height: 1.75;
+  &.large {
+    font-size: 16px;
+  }
+}
+.img-centered {
+  margin: 0 auto;
+}
+
+// Restyled Primary Buttons
+.btn-primary {
+  @include button-variant(white, $primary, $primary);
+  font-weight: 700;
+  &:hover {
+    @include button-variant(white, darken($primary,3%), $primary);
+  }
+  &:active,
+  &:focus {
+    @include button-variant(white, darken($primary,7%), $primary);
+  }
+}
+.btn-xl {
+  @include button-variant(white, $primary, $primary);
+  @include heading-font;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px 40px;
+}
+.text-muted {
+  color: $dark;
+}
+.text-primary {
+  color: $primary;
+}
+.form {
+  label {
+    font-weight: 300;
+    font-size: 1.8em;
+  }
+}
+.navbar-right {
+  margin: 0;
+}
+.form-body{
+  margin-bottom:25px;
+}

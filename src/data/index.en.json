@@ -1,0 +1,58 @@
+{
+    "banner": {
+        "prephrase": "INSURANCES",
+        "phrases_first": "MOTOR",
+        "phrases": "LIFE & HEALTH, PROPERTY, BOAT, PHOTOVOLTAIC, LIABILITY, TRAVEL, PERSONAL ACCIDENT"
+    },
+    "personal_0": {
+        "title": "Personal Insurances",
+        "items": {
+            "automoto": {
+                "title": "MOTOR"
+            },
+            "life": {
+                "title": "LIFE & HEALTH"
+            },
+            "property": {
+                "title": "PROPERTY"
+            },
+            "boat": {
+                "title": "BOAT"
+            }
+        }
+    },
+    "personal_1": {
+        "items": {
+            "photovoltaic": {
+                "title": "PHOTOVOLTAIC"
+            },
+            "liability": {
+                "title": "LIABILITY"
+            },
+            "travel": {
+                "title": "TRAVEL"
+            },
+            "accident": {
+                "title": "PERSONAL ACCIDENT"
+            }
+        }
+    },
+    "business": {
+        "title": "Business Insurances",
+        "items": {
+            "grouppolicies": {
+                "title": "GROUP POLICIES"
+            },
+            "businessliability": {
+                "title": "LIABILITY PROTECTION"
+            },
+            "cargo": {
+                "title": "CARGO INSURANCE"
+            },
+            "allrisk": {
+                "title": "AGAINST ALL RISK"
+            }
+        }
+    }
+
+}

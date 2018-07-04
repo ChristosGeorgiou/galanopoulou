@@ -1,0 +1,67 @@
+<section class="contact {{contact_class}}">
+
+    <div class="container">
+
+        <div class="section-header">
+            <h2 class="section-heading">{{_base.contact.title}}</h2>
+            <span>{{_base.contact.description}}</span>
+        </div>
+
+        <div class="alert alert-danger text-center form-contact-error" style="display:none;">
+            <h3>
+              <span class="fa fa-times-circle-o fa-5x text-danger"></span><br>
+              {{_base.contact.error.title}}
+            </h3>
+            <p>
+                {{_base.contact.error.info1}} {{_base.phone}}
+                <br>{{_base.contact.error.info2}} {{_base.email}}
+            </p>
+        </div>
+
+        <div class="alert alert-success text-center form-contact-success" style="display:none;">
+            <h3>
+              <span class="fa fa-check-circle-o fa-5x text-success"></span><br>
+              {{_base.contact.success.title}}
+            </h3>
+            <p>
+                {{_base.contact.success.info1}} {{_base.phone}}
+                <br>{{_base.contact.success.info2}} {{_base.email}}
+            </p>
+        </div>
+
+        <form action="/email.php" class="form-contact" method="post" rel="contact">
+
+            <div class="form-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="sr-only" for="name">Name</label>
+                            <input class="form-control" id="ContactName" name="name" type="text" placeholder="{{_base.contact.name}}" />
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="email">Email</label>
+                            <input class="form-control" id="ContactEmail" name="email" required type="email" placeholder="{{_base.contact.email}}" />
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="phone">Phone</label>
+                            <input class="form-control" id="ContactPhone" name="phone" type="tel" placeholder="{{_base.contact.phone}}" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="sr-only" for="message">">Message</label>
+                            <textarea class="form-control" id="ContactMessage" name="message" required placeholder="{{_base.contact.message}}"></textarea>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-lg-12 text-center">
+                        <button class="btn btn-xl" type="submit">{{_base.contact.action}}</button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+
+</section>

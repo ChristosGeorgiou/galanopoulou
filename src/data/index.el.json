@@ -1,0 +1,57 @@
+{
+    "banner": {
+        "prephrase": "ΑΣΦΑΛΕΙΕΣ",
+        "phrases_first": "ΑΥΤΟΚΙΝΗΤΟΥ",
+        "phrases": "ΖΩΗΣ & ΥΓΕΙΑΣ, ΚΑΤΟΙΚΙΑΣ, ΣΚΑΦΟΥΣ, ΦΩΤΟΒΟΛΑΤΑΪΚΩΝ, ΑΣΤΙΚΗΣ ΕΥΘΥΝΗΣ, ΤΑΞΙΔΙΩΤΙΚΗ, ΠΡΟΣΩΠΙΚΟΥ ΑΤΥΧΗΜΑΤΟΣ"
+    },
+    "personal_0": {
+        "title": "Ασφάλειες για Ιδιώτες",
+        "items": {
+            "automoto": {
+                "title": "ΑΥΤΟΚΙΝΗΤΟΥ"
+            },
+            "life": {
+                "title": "ΖΩΗΣ & ΥΓΕΙΑΣ"
+            },
+            "property": {
+                "title": "ΚΑΤΟΙΚΙΑΣ"
+            },
+            "boat": {
+                "title": "ΣΚΑΦΟΥΣ"
+            }
+        }
+    },
+    "personal_1": {
+        "items": {
+            "photovoltaic": {
+                "title": "ΦΩΤΟΒΟΛΤΑΪΚΩN"
+            },
+            "liability": {
+                "title": "ΑΣΤΙΚΗΣ ΕΥΘΥΝΗΣ"
+            },
+            "travel": {
+                "title": "ΤΑΞΙΔΙΩΤΙΚΗ ΑΣΦΑΛΙΣΗ"
+            },
+            "accident": {
+                "title": "ΠΡΟΣΩΠΙΚΟΥ ΑΤΥΧΗΜΑΤΟΣ"
+            }
+        }
+    },
+    "business": {
+        "title": "Ασφάλειες για Επιχειρήσεις",
+        "items": {
+            "grouppolicies": {
+                "title": "GROUP POLICIES"
+            },
+            "businessliability": {
+                "title": "LIABILITY PROTECTION"
+            },
+            "cargo": {
+                "title": "CARGO INSURANCE"
+            },
+            "allrisk": {
+                "title": "AGAINST ALL RISK"
+            }
+        }
+    }
+}

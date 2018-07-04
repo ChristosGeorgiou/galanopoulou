@@ -1,0 +1,13 @@
+RewriteEngine On
+
+RewriteRule ^(/)?$ pages/el/index.html [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(en|el)/(.*) pages/$1/$2 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*) pages/el/$1 [L]
+
+<FilesMatch "\.(jpg|png|js|css)$">
+Header set Cache-Control "public, max-age=86400"
+</FilesMatch>

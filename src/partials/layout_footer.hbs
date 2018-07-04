@@ -1,0 +1,54 @@
+<div class="bodyloader">
+    <div class="spinner"></div>
+</div>
+
+<script data-main="/assets/js/main" src="/assets/js/require.js"></script>
+
+<script>
+    var _styles = [
+        "//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css",
+        "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css",
+        "//fonts.googleapis.com/css?family=Open+Sans:400,700,300&amp;subset=latin,greek",
+        "//cdnjs.cloudflare.com/ajax/libs/simple-text-rotator/1.0.0/simpletextrotator.min.css",
+        "/assets/css/style.min.css"
+    ];
+
+    var _style_loads = 0;
+
+    var init = function() {
+        if (_style_loads == _styles.length - 1) {
+            var body = document.getElementsByTagName('body')[0];
+            var bodyloader = document.getElementsByClassName('bodyloader')[0];
+            bodyloader.className += " bhidden";
+            setTimeout(function() {
+                body.removeChild(bodyloader);
+            }, 1000);
+        } else {
+            _style_loads++;
+        }
+
+    };
+    var cb = function() {
+        _styles.forEach(function(style) {
+            var l = document.createElement('link');
+            l.rel = 'stylesheet';
+            l.href = style;
+            l.onload = init;
+            var h = document.getElementsByTagName('head')[0].lastChild;
+            h.parentNode.insertBefore(l, h);
+        });
+    };
+
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+</script>
+
+{{#if _base.ganalytics.enabled}}
+    <div id="ganalytics-to-params" data-key= {{_base.ganalytics.key}}></div>
+{{/if}}
+
+</body>
+
+</html>

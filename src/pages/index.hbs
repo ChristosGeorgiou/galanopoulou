@@ -1,5 +1,54 @@
-{{>_start}}
-<div class='container'>
+{{> default_header}} {{> banner}}
 
-</div>
-{{>_end}}
+<section>
+    <div class="container">
+        <div class="section-header">
+            <h2>{{personal_0.title}}</h2>
+        </div>
+        <div class="row text-center">
+            {{#each personal_0.items}}
+                <div class="col-sm-3">
+                    <a href="/{{@root._base.language.code}}/{{url}}" class="thumbnail thumbnail-index">
+                        <span class="fa fa-{{icon}} text-primary"></span>
+                        <div class="caption">
+                            <strong>{{title}}</strong>
+                        </div>
+                    </a>
+                </div>
+            {{/each}}
+        </div>
+        <div class="row text-center">
+            {{#each personal_1.items}}
+                <div class="col-sm-3">
+                    <a href="/{{@root._base.language.code}}/{{url}}" class="thumbnail thumbnail-index">
+                        <span class="fa fa-{{icon}} text-primary"></span>
+                        <div class="caption">
+                            <strong>{{title}}</strong>
+                        </div>
+                    </a>
+                </div>
+            {{/each}}
+        </div>
+
+        <hr>
+
+        <div class="section-header">
+            <h2>{{business.title}}</h2>
+        </div>
+        <div class="row text-center">
+            {{#each business.items}}
+                <div class="col-sm-3">
+                    <a href="/{{@root._base.language.code}}/{{url}}" class="thumbnail thumbnail-index">
+                        <span class="fa fa-{{icon}} text-primary"></span>
+                        <div class="caption">
+                            <strong>{{title}}</strong>
+                        </div>
+                    </a>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+
+</section>
+
+{{> contact}} {{> default_footer}}

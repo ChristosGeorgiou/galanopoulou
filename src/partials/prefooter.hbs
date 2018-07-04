@@ -1,0 +1,32 @@
+<section class="pre-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="footer-short">
+                    <h4>{{_base.footer.short.title}}</h4>
+                    {{#each _base.footer.short.paragraphs}}
+                        <p>{{this}}</p>
+                    {{/each}}
+                </div>
+            </div>
+            <div class="col-lg-4">
+                {{#if _base.mailchimp.enabled}}
+                    <h4>{{_base.footer.newsletter.title}}</h4>
+                    <p>{{_base.footer.newsletter.description}}</p>
+                    <form action="//softloop.us4.list-manage.com/subscribe/post?u={{_base.mailchimp.user}}&amp;id={{_base.mailchimp.id}}" method="post" name="mc-embedded-subscribe-form" novalidate target="_blank">
+                        <div class="form-group">
+                            <input class="form-control input-lg" name="FNAME" placeholder="{{_base.footer.newsletter.name}}" type="text" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control input-lg" name="EMAIL" placeholder="{{_base.footer.newsletter.email}}" type="email" value="" />
+                        </div>
+                        <div style="position: absolute; left: -5000px;">
+                            <input name="{{_base.mailchimp.form}}" tabindex="-1" type="text" value="">
+                        </div>
+                        <input class="btn btn-primary btn-lg btn-block" name="subscribe" type="submit" value="{{_base.footer.newsletter.button}}" />
+                    </form>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</section>

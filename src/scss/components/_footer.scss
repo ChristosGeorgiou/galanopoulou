@@ -1,0 +1,54 @@
+.pre-footer {
+  background: $footer-background;
+  color: #fff;
+  p {
+    font-size: 1.3em;
+    font-weight: 300;
+  }
+}
+footer {
+  padding: 25px 0;
+  span.copyright {
+    line-height: 40px;
+    @include heading-font;
+    text-transform: none;
+  }
+  ul.quicklinks {
+    margin-bottom: 0;
+    line-height: 40px;
+    @include heading-font;
+    text-transform: none;
+  }
+  ul.social-buttons {
+    margin-bottom: 0;
+    li {
+      a {
+        display: block;
+        background-color: $dark;
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        font-size: 20px;
+        line-height: 40px;
+        color: white;
+        outline: none;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        &:hover,
+        &:focus,
+        &:active {
+          &.facebook {
+            background: #3b5998;
+          }
+          &.twitter {
+            background: #00aced;
+          }
+          &.linkedin {
+            background: #007bb5;
+          }
+        }
+      }
+    }
+  }
+}

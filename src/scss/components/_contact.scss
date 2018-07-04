@@ -1,0 +1,39 @@
+// Contact Section
+section.contact {
+  background-color: #111;
+  background-image: url("../img/map.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+    color: white;
+  .contact-box {
+    padding: 25px;
+  }
+  .section-header {
+    color: white;
+  }
+  .form-group {
+    margin-bottom: 25px;
+    input,
+    textarea {
+      padding: 20px;
+    }
+    input.form-control {
+      height: auto;
+    }
+    textarea.form-control {
+      height: 236px;
+    }
+  }
+  .form-control:focus {
+    border-color: $primary;
+    box-shadow: none;
+  }
+  ::-webkit-input-placeholder,
+  :-moz-placeholder,
+  ::-moz-placeholder,
+  :-ms-input-placeholder {
+    @include heading-font;
+    font-weight: 700;
+    color: #ccc;
+  }
+}

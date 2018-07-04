@@ -1,0 +1,24 @@
+{{> default_header}}
+
+<section class="section-top highlight">
+    <div class="container">
+        <div class="section-header">
+            <h1>{{title}}</h1>
+            <span>{{description}}</span>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                {{#each details}}
+                    <p>{{this}}</p>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{> default_footer}}

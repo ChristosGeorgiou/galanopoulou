@@ -1,0 +1,66 @@
+{
+    "banner": {
+
+    },
+    "personal_0": {
+        "items": {
+            "automoto": {
+                "icon": "car",
+                "url": "products/automoto.html"
+            },
+            "life": {
+                "icon": "medkit",
+                "url": "products/life.html"
+            },
+            "property": {
+                "icon": "home",
+                "url": "products/property.html"
+            },
+            "boat": {
+                "icon": "ship",
+                "url": "products/boat.html"
+            }
+        }
+    },
+    "personal_1": {
+        "items": {
+            "photovoltaic": {
+                "icon": "sun-o",
+                "url": "products/photovoltaic.html"
+            },
+            "liability": {
+                "icon": "road",
+                "url": "products/liability.html"
+            },
+            "travel": {
+                "icon": "plane",
+                "url": "products/travel.html"
+            },
+            "accident": {
+                "icon": "child",
+                "url": "products/accident.html"
+            }
+        }
+    },
+    "business": {
+        "title": "Business Insurances",
+        "items": {
+            "grouppolicies": {
+                "icon": "users",
+                "url": "products/grouppolicies.html"
+            },
+            "businessliability": {
+                "icon": "building",
+                "url": "products/businessliability.html"
+            },
+            "cargo": {
+                "icon": "truck",
+                "url": "products/cargo.html"
+            },
+            "allrisk": {
+                "icon": "fire-extinguisher",
+                "url": "products/allrisk.html"
+            }
+        }
+    }
+}

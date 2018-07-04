@@ -1,0 +1,51 @@
+section {
+  padding: 50px 0;
+  &.section-top {
+    padding: 130px 0 0;
+  }
+  &.highlight {
+    background: $primary;
+    color: #fff;
+  }
+  &.odd {
+    background: #f6f6f6;
+  }
+  .section-header {
+    text-align: center;
+    margin-bottom: 30px;
+    span {
+      font-size: 1.2em;
+      font-weight: 300;
+    }
+  }
+  h1,
+  h2 {
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 300;
+  }
+  h3 {
+    font-size: 2em;
+    font-weight: 300;
+  }
+}
+.text-call {
+  font-size: 2em;
+    font-weight: 300;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+.fa-tour-icon {
+  font-size: 120px;
+  text-align: center;
+}
+@media(max-width:768px) {
+  .navbar-collapse {
+    padding: 15px;
+    max-height: 450px !important;
+    li {
+      margin: 2px;
+    }
+  }
+}

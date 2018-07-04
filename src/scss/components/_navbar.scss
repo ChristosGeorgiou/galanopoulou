@@ -1,0 +1,108 @@
+.navbar-default {
+    background-color: #fff;
+    border-color: transparent;
+    box-shadow: 0 0 15px #666;
+    .navbar-brand {
+        color: $dark;
+        font-weight: 100;
+        text-transform: uppercase;
+        @include script-font;
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+            color: $dark;
+        }
+        .logo {
+            display: inline-block;
+            height: 30px;
+            margin-top: -7px;
+        }
+    }
+    .navbar-collapse {
+        border-color: fade(white, 2%);
+    }
+    .navbar-toggle {
+        background-color: $primary;
+        border-color: $primary;
+        .icon-bar {
+            background-color: white;
+        }
+        &:focus,
+        &:hover {
+            background-color: $primary;
+        }
+    }
+    .nav {
+        > li {
+            > a {
+                @include heading-font;
+                font-weight: 400;
+                letter-spacing: 1px;
+                color: #333;
+                height: 50px;
+                @media (max-width: 992px) {
+                    padding: 15px 10px;
+                }
+                &:focus,
+                &:hover {
+                    color: $primary;
+                    outline: none;
+                }
+            }
+            &.highlight {
+                a {
+                    background: $primary;
+                    border-radius: 0;
+                    color: #FFF;
+                    margin-left: 5px;
+                }
+            }
+            &.active {
+                > a {
+                    border-radius: 0;
+                    background: none;
+                    border-bottom: solid 4px $primary;
+                    &:focus,
+                    &:hover {
+                        color: $primary;
+                        background: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.navbar-fixed-top {
+    top: 0;
+}
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        top: 30px;
+    }
+}
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 7px 0;
+        -webkit-transition: padding 0.3s;
+        -moz-transition: padding 0.3s;
+        transition: padding 0.3s;
+        border: none;
+        .navbar-brand {
+            font-size: 2.5em;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+        .navbar-nav > .active > a {
+            border-radius: 3px;
+        }
+    }
+    .navbar-default.animated-header-scroll {
+        background-color: $dark;
+        padding: 10px 0;
+        .navbar-brand {
+            font-size: 3em;
+        }
+    }
+}

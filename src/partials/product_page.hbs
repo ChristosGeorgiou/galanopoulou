@@ -1,0 +1,32 @@
+<section class="section-top highlight">
+    <div class="container">
+        <div class="section-header">
+            <div class="thumbnail thumbnail-inverse">
+                <span class="fa fa-{{icon}} fa-inverse"></span>
+            </div>
+            <h1>{{title}}</h1>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                {{#each content}}
+                    {{#if list}}
+                        <ul>
+                            {{#each list}}
+                                <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                    {{else if header}}
+                        <h4 class="page-header">{{header}}</h4>
+                    {{else}}
+                        <p>{{this}}</p>
+                    {{/if}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</section>

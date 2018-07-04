@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="el">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="SoftLoop" name="author" />
+    <title>Galanopoulou - Ασφάλεια Αυτοκινήτου</title>
+
+    <meta content="Galanopoulou" property="og:title">
+    <meta content="" property="og:description">
+    <meta content="http://galanopoulou.gr" property="og:url">
+    <meta content="http://galanopoulou.gr/assets/img/logo_big.jpg" property="og:image">
+    <meta content="product" property="og:type">
+
+        <link rel="alternate" hreflang="en" href="http://galanopoulou.gr/en/motor.html" />
+        <link rel="alternate" hreflang="el" href="http://galanopoulou.gr/el/motor.html" />
+
+    <style>
+        .bodyloader {
+            z-index: 10000;
+            display: block;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: #EEE;
+            opacity: 1;
+            filter: alpha(opacity=100);
+            -moz-transition: opacity .5s linear;
+            -o-transition: opacity .5s linear;
+            -webkit-transition: opacity .5s linear;
+            transition: opacity .5s linear;
+        }
+
+        .bodyloader.bhidden {
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+
+        .bodyloader .spinner {
+            margin: -61px 0 0 -61px;
+            left: 50%;
+            top: 50%;
+            font-size: 10px;
+            position: absolute;
+            text-indent: -9999em;
+            border-top: 1.1em solid rgba(113, 113, 113, 0.2);
+            border-right: 1.1em solid rgba(113, 113, 113, 0.2);
+            border-bottom: 1.1em solid rgba(113, 113, 113, 0.2);
+            border-left: 1.1em solid #A2A2A2;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation: load8 1.1s infinite linear;
+            animation: load8 1.1s infinite linear;
+        }
+
+        .bodyloader .spinner,
+        .bodyloader .spinner:after {
+            border-radius: 50%;
+            width: 10em;
+            height: 10em;
+        }
+
+        @-webkit-keyframes load8 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes load8 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js""></script>
+
+        <link href="//netdna.bootstrapcdn.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+        <link href="libs/cross-domain/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+        <script src="libs/cross-domain/respond.proxy.js"></script>
+
+      <![endif]-->
+</head>
+
+<body>
+<div class="header hidden-xs">
+    <div class="container">
+        <ul class="list-inline">
+            <li class="static">
+                <i class="fa fa-fw fa-phone"></i> 2105154313-14
+            </li>
+            <li class="static">
+                <i class="fa fa-fw fa-envelope-o"></i> contact@galanopoulou.gr
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown">
+                <a href="javascript;" class="language-toggle dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span>Ελληνικά</span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="language-menu dropdown-menu">
+                        <li><a href="/en/motor.html">Εnglish</a></li>
+                        <li><a href="/el/motor.html">Ελληνικά</a></li>
+                </ul>
+            </li>
+            <li class="pull-right">
+                    <a class="btn-social btn-social-facebook" href="http://facebook.com/softloop">
+                        <i class="fa fa-facebook fa-fw"></i>
+                    </a>
+                    <a class="btn-social btn-social-twitter" href="http://twitter.com/softloopgr">
+                        <i class="fa fa-twitter fa-fw"></i>
+                    </a>
+                    <a class="btn-social btn-social-linkedin" href="http://linkedin.com/company/softloop">
+                        <i class="fa fa-linkedin fa-fw"></i>
+                    </a>
+                <a class="btn-social btn-social-contact" href="contact.html">
+                    <i class="fa fa-envelope-o fa-fw"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button class="navbar-toggle" data-target="#top-menu" data-toggle="collapse" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="index.html">
+                <img class="logo" src="/assets/img/logo.png" /> Galanopoulou
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="top-menu">
+            <ul class="nav navbar-nav navbar-right">
+                        <li class=" ">
+                            <a href="index.html">ΑΡΧΙΚΗ</a>
+                        </li>
+                        <li class=" ">
+                            <a href="company.html">Η ΕΤΑΙΡΕΙΑ</a>
+                        </li>
+                        <li class="dropdown ">
+                            <a href class="dropdown-toggle" data-toggle="dropdown">
+                                <span>personal</span>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                    <li class=" ">
+                                        <a href="products/automoto.html">automoto</a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="products/life.html">life</a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="products/property.html">property</a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="products/boat.html">boat</a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="products/photovoltaic.html">photovoltaic</a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="products/liability.html">liability</a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="products/travel.html">travel</a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="products/accident.html">accident</a>
+                                    </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown ">
+                            <a href class="dropdown-toggle" data-toggle="dropdown">
+                                <span>business</span>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                    <li class=" ">
+                                        <a href="products/grouppolicies.html">grouppolicies</a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="products/businessliability.html">businessliability</a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="products/cargo.html">cargo</a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="products/allrisk.html">allrisk</a>
+                                    </li>
+                            </ul>
+                        </li>
+                        <li class=" ">
+                            <a href="contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+                        </li>
+                <li class="visible-xs dropdown">
+                    <a href="javascript;" class="language-toggle dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <span>Ελληνικά</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="language-menu dropdown-menu">
+                            <li><a href="/en/motor.html">Εnglish</a></li>
+                            <li><a href="/el/motor.html">Ελληνικά</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="section-top highlight">
+    <div class="container">
+        <div class="section-header">
+            <div class="thumbnail thumbnail-inverse">
+                <span class="fa fa-car fa-inverse"></span>
+            </div>
+            <h1>Ασφάλεια Αυτοκινήτου</h1>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                        <p>Η υποχρεωτική ασφάλιση αυτοκινήτων έχει θεσμοθετηθεί ήδη στη χώρα μας (σύμφωνα με τους Νόμους 489/76, 2496/1997 και του Π.Δ. 237/86) γεγονός που την καθιστά απαραίτητη ώστε να κυκλοφορούμε με ασφάλεια και υπευθυνότητα.
+                        <ul>
+                                <li>Επιβατικά Ι.Χ.</li>
+                                <li>Μοτό</li>
+                                <li>Φορτηγά Ι.Χ.</li>
+                                <li>Φορτηγά Ι.Χ. Αγροτικά</li>
+                                <li>Φορτηγά Δ.Χ.  κ.α.</li>
+                        </ul>
+                        <p>Υπάρχουν πολλοί παράγοντες που επηρεάζουν την τιμή στις ασφάλειες αυτοκινήτων.
+                        <p>Το ιστορικό της οδήγησής σας, η ηλικία σας, ο τύπος του αυτοκινήτου σας, η έδρα του οχήματός σας, οι καλύψεις που επιθυμείτε, είναι μερικοί από αυτούς.
+                        <p>Εμείς σας προτείνουμε υπεύθυνα, προγράμματα ασφάλισης ώστε να προστατεύεστε από τους πιο κάτω ουσιαστικούς κινδύνους, σε ιδιαίτερα ανταγωνιστικές τιμές ανάλογα με τον προϋπολογισμό και τις ανάγκες σας.
+                        <p>Ένα πρόγραμμα ασφάλισης μπορεί να περιλαμβάνει πέραν των υποχρεωτικών  από τον νόμο καλύψεων (Αστική ευθύνη έναντι τρίτων : Σωματικές Βλάβες ανά θύμα 1.000.000€ και Υλικές ζημιές ανά ατύχημα 1.000.000€ ) και άλλες απαραίτητες για την προστασία σας καλύψεις όπως:
+                        <ul>
+                                <li>Υλικές ζημιές από ανασφάλιστο όχημα</li>
+                                <li>Φροντίδα Ατυχήματος</li>
+                                <li>Θραύση κρυστάλλων</li>
+                                <li>Προσωπικό ατύχημα οδηγού</li>
+                                <li>Πυρκαγιά </li>
+                                <li>Τρομοκρατικές ενέργειες</li>
+                                <li>Πολιτικές ταραχές</li>
+                                <li>Φυσικά φαινόμενα (περιλαμβάνεται και το χαλάζι)</li>
+                                <li>Κλοπή (Ολική / Μερική) </li>
+                                <li>Κακόβουλες ενέργειες</li>
+                                <li>Αυτοκίνητο αντικατάστασης</li>
+                                <li>Οδική Βοήθεια Βλάβης</li>
+                                <li>Νομική Προστασία κ.α.</li>
+                        </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pre-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="footer-short">
+                    <h4></h4>
+                </div>
+            </div>
+            <div class="col-lg-4">
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container text-center">
+        <ul class="list-inline social-buttons">
+            <li>
+                <a href="http://facebook.com/softloop">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="http://twitter.com/softloopgr">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="http://linkedin.com/company/softloop">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <hr/>
+    <div class="container text-center">
+        Galanopoulou Insurances by
+        <img src="/assets/img/softlooplogo.png" />
+        <a href="http://softloop.gr">SoftLoop</a> -
+        <a href="terms.html">Όροι Χρήσης</a> -
+        <a href="sitemap.html">Sitemap</a>
+    </div>
+</footer>
+<div class="bodyloader">
+    <div class="spinner"></div>
+</div>
+
+<script data-main="/assets/js/main" src="/assets/js/require.js"></script>
+
+<script>
+    var _styles = [
+        "//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css",
+        "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css",
+        "//fonts.googleapis.com/css?family=Open+Sans:400,700,300&amp;subset=latin,greek",
+        "//cdnjs.cloudflare.com/ajax/libs/simple-text-rotator/1.0.0/simpletextrotator.min.css",
+        "/assets/css/style.min.css"
+    ];
+
+    var _style_loads = 0;
+
+    var init = function() {
+        if (_style_loads == _styles.length - 1) {
+            var body = document.getElementsByTagName('body')[0];
+            var bodyloader = document.getElementsByClassName('bodyloader')[0];
+            bodyloader.className += " bhidden";
+            setTimeout(function() {
+                body.removeChild(bodyloader);
+            }, 1000);
+        } else {
+            _style_loads++;
+        }
+
+    };
+    var cb = function() {
+        _styles.forEach(function(style) {
+            var l = document.createElement('link');
+            l.rel = 'stylesheet';
+            l.href = style;
+            l.onload = init;
+            var h = document.getElementsByTagName('head')[0].lastChild;
+            h.parentNode.insertBefore(l, h);
+        });
+    };
+
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+</script>
+
+
+</body>
+
+</html>

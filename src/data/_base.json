@@ -1,0 +1,91 @@
+{
+    "name": "Galanopoulou Insurances",
+    "title": "Galanopoulou",
+    "logo": "Galanopoulou",
+    "url": "http://galanopoulou.gr",
+    "phone": "2105154313-14",
+    "email": "dionysiagalanopoulou@gmail.com",
+    "languages": {
+        "en": {
+            "title": "English"
+        },
+        "el": {
+            "title": "Greek"
+        }
+    },
+    "menu": {
+        "index": {
+            "url": "index.html"
+        },
+        "company": {
+            "url": "company.html"
+        },
+        "personal": {
+            "submenu": {
+                "automoto": {
+                    "url": "products/automoto.html"
+                },
+                "life": {
+                    "url": "products/life.html"
+                },
+                "property": {
+                    "url": "products/property.html"
+                },
+                "boat": {
+                    "url": "products/boat.html"
+                },
+                "photovoltaic": {
+                    "url": "products/photovoltaic.html"
+                },
+                "liability": {
+                    "url": "products/liability.html"
+                },
+                "travel": {
+                    "url": "products/travel.html"
+                },
+                "accident": {
+                    "url": "products/accident.html"
+                }
+            }
+        },
+        "business": {
+            "submenu": {
+                "grouppolicies": {
+                    "url": "products/grouppolicies.html"
+                },
+                "businessliability": {
+                    "url": "products/businessliability.html"
+                },
+                "cargo": {
+                    "url": "products/cargo.html"
+                },
+                "allrisk": {
+                    "url": "products/allrisk.html"
+                }
+            }
+        },
+        "contact": {
+            "url": "contact.html"
+        }
+
+    },
+    "social": {
+        "facebook": "https://www.facebook.com/%CE%91%CF%83%CF%86%CE%AC%CE%BB%CE%B5%CE%B9%CE%B5%CF%82-%CE%93%CE%B1%CE%BB%CE%B1%CE%BD%CE%BF%CF%80%CE%BF%CF%8D%CE%BB%CE%BF%CF%85-274750256022462/",
+        "twitter": false,
+        "linkedin": false
+    },
+    "tawk": {
+        "enabled": false,
+        "key": "5602c490b55b84d06b609c59"
+    },
+    "ganalytics": {
+        "enabled": false,
+        "key": "UA-25566806-20"
+    },
+    "mailchimp": {
+        "enabled": false,
+        "user": "fa2cbd3415e9b45f269a7a64a",
+        "id": "d1b181c7d1",
+        "form": "b_fa2cbd3415e9b45f269a7a64a_d1b181c7d1"
+    }
+}

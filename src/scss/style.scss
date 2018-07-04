@@ -1,1 +1,49 @@
-@import "./node_modules/bootstrap/scss/bootstrap";
+$primary: #02afb6;
+$dark: #111;
+$header-background: #02afb6;
+$header-font: #FFF;
+$footer-background: #222;
+@import "components/mixins";
+@import "components/bootstrap";
+@import "components/banner";
+@import "components/contact";
+@import "components/header";
+@import "components/loading";
+@import "components/pricing";
+@import "components/navbar";
+@import "components/footer";
+@import "components/videobox";
+@import "templates/default";
+.thumbnail-index {
+    padding: 40px 5px 20px;
+    margin-bottom: 25px;
+    .fa {
+        font-size: 10em;
+        line-height: 1em;
+    }
+    &:hover {
+        border-color: $primary !important;
+        text-decoration: none;
+    }
+}
+.thumbnail-inverse {
+    background: $primary;
+    border: none;
+    text-align: center;
+    .fa.fa-inverse {
+        line-height: 1em;
+        padding: 25px 0;
+        font-size: 10em;
+    }
+}
+.navbar-header {
+  
+    .navbar-brand {
+        padding: 5px;
+        margin: 0 !important;
+        .logo {
+            height: 40px !important;
+            margin: 0 !important;
+        }
+    }
+}
