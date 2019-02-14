@@ -1,7 +1,8 @@
 {
-  "name": "website-galanopoulou",
+  "name": "galanopoulou",
   "version": "0.0.0",
   "description": "cgeosoft.com",
+  "private": true,
   "author": {
     "name": "Christos Georgiou",
     "email": "georgiou.christos@outlook.com",
